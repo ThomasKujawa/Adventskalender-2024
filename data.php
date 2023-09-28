@@ -144,12 +144,6 @@ $data = [
     'author' => '',
     'teaser' => 'Mann und Frau stehen bei dieser Stellung. Der Mann steht hinter seiner Partnerin und umfasst ihre Handgelenke mit den Händen, ihr Oberkörper ist leicht gebeugt.',
   ],
-  25 => [
-    'href' => 'images/25 jungfrau.jpg',
-    'heading' => 'Jungfrau',
-    'author' => '',
-    'teaser' => 'Im Unterschied zur Missionarsstellung liegt der Mann nicht zwischen den Beinen der Frau, sondern links und rechts neben den geschlossenen Oberschenkeln der Partnerin. Er dringt dabei durch die enge Lücke zwischen ihren Schenkeln in sie ein, was für beide zu einem intensiveren Gefühl führt.',
-  ],
 ];
 $default = 'Dieses Türchen öffnet sich erst am ##date##.&nbsp;Dezember.';
 $donate = [
