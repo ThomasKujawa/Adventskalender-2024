@@ -1,7 +1,7 @@
 <?php
 require ('data.php');
 
-$year = 2019;
+$year = 2023;
 $title = 'Adventskalender '.$year;
 
 $now = time();
@@ -11,14 +11,14 @@ for ($k = 1; $k <= sizeof($data); $k++) :
   $allowed = mktime(0,0,0,12,$k,$year);
   if ($now > $allowed) :
     $listitems[] = '
-      <a href="'.$data[$k]['href'].'">
+      <a target="_blank" href="'.$data[$k]['href'].'">
         <h2>'.$data[$k]['heading'].'</h2>
         <p>'.$data[$k]['author'].'</p>
         <p>'.$data[$k]['teaser'].'</p>
       </a>';
   elseif ($k == $today + 1 || $k == 24) :
     $listitems[] = '
-      <a class="donate" href="'.$donate['href'].'">
+      <a target="_blank" class="donate" href="'.$donate['href'].'">
         <h2>'.$donate['heading'].'</h2>
         <p>'.$donate['text'].'</p>
       </a>';
@@ -37,7 +37,7 @@ endfor; ?>
     <script><?php include('js.php') ?></script>
   </head>
   <body>
-    <h1><a href="https://selfhtml.org"><?=$title?></a></h1>
+    <h1><a href=""><?=$title?></a></h1>
     <ol> <?php 
       for ($k = 0; $k < sizeof($listitems); $k++) : ?>
         <li><?=$listitems[$k]?></li> <?php

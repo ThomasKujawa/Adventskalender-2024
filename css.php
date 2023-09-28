@@ -26,7 +26,7 @@ h1 a {
   text-decoration: none;
   color: inherit;
   padding: 6rem 0 2rem calc(126px + 1rem);
-  background-image: url(Selfhtml-nico.png);
+  background-image: url(paar.png);
   background-position: left center;
   background-repeat: no-repeat;
 }
