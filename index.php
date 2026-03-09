@@ -11,14 +11,14 @@ for ($k = 1; $k <= sizeof($data); $k++) :
   $allowed = mktime(0,0,0,12,$k,$year);
   if ($now > $allowed) :
     $listitems[] = '
-      <a href="'.$data[$k]['href'].'">
+      <a target="_blank" href="'.$data[$k]['href'].'">
         <h2>'.$data[$k]['heading'].'</h2>
         <p>'.$data[$k]['author'].'</p>
         <p>'.$data[$k]['teaser'].'</p>
       </a>';
   elseif ($k == $today + 1 || $k == 24) :
     $listitems[] = '
-      <a class="donate" href="'.$donate['href'].'">
+      <a target="_blank" class="donate" href="'.$donate['href'].'">
         <h2>'.$donate['heading'].'</h2>
         <p>'.$donate['text'].'</p>
       </a>';
