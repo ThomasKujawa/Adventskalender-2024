@@ -1,7 +1,7 @@
 <?php
 require ('data.php');
 
-$year = 2023;
+$year = 2024;
 $title = 'Adventskalender '.$year;
 
 $now = time();
@@ -37,7 +37,7 @@ endfor; ?>
     <script><?php include('js.php') ?></script>
   </head>
   <body>
-    <h1><a href=""><?=$title?></a></h1>
+    <h1><a href="https://advent.radelei.de"><?=$title?></a></h1>
     <ol> <?php 
       for ($k = 0; $k < sizeof($listitems); $k++) : ?>
         <li><?=$listitems[$k]?></li> <?php
